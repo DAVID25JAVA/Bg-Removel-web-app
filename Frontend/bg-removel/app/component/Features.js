@@ -8,13 +8,13 @@ export default function Features() {
         return (
           <div
             key={i}
-            className="max-w-md border hover:scale-105 transition-all duration-300 border-gray-500 rounded-lg p-10 flex gap-5 "
+            className="max-w-md border hover:scale-105 transition-all duration-300 border-gray-500 rounded-lg md:p-10 py-6 px-3 flex gap-5 "
           >
             <p className=" flex items-center justify-center bg-gradient-to-r from-purple-700 to-pink-400 text-white h-10 px-2 rounded-lg">
               {data?.icon}
             </p>
             <div className="">
-              <h1 className="text-xl text-black font-semibold">
+              <h1 className="text-xl text-black font-bold">
                 {data?.title}
               </h1>
               <p className="text-xs text-gray-600">{data?.description}</p>

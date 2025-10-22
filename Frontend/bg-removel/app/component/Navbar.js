@@ -11,14 +11,14 @@ function Navbar() {
   return (
     <div className="max-w-6xl mx-auto py-5 px-5">
       {/* logo */}
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <div>
           <Image
             onClick={() => {
               router.push("/")
               scrollTo(0, 0);
             }}
-            className="cursor-pointer"
+            className="cursor-pointer w-40 md:w-0 "
             alt="logo"
             src={assets?.logo}
             width={180}
@@ -28,7 +28,7 @@ function Navbar() {
 
         {/* Button */}
         <div>
-          <Button text="Get Started" variant="primary" icon={<MoveRight />} />
+          <Button text="Get Started" className="" variant="primary" icon={<MoveRight />} />
         </div>
       </div>
     </div>

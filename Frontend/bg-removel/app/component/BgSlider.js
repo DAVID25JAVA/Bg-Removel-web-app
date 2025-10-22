@@ -11,8 +11,8 @@ function BgSlider() {
 
   return (
     <div className="md:my-20 my-10">
-      <h1 className="text-center md:text-4xl text-2xl font-semibold text-gray-700">
-        Remove Background With High <br /> Quality and Accuracy
+      <h1 className="text-center md:text-4xl text-2xl font-bold text-gray-700">
+        Remove Background With <br /> High  Quality and Accuracy
       </h1>
 
       {/* Image with slider functionality */}

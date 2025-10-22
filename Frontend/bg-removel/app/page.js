@@ -22,7 +22,7 @@ function Home() {
       <div className="  flex items-center flex-col md:flex-row  md:justify-between">
         {/* left content */}
         <div className=" md:max-w-xl">
-          <h1 className="md:font-bold font-semibold text-gray-800 md:text-5xl text-2xl leading-8 md:leading-15 md:max-w-md ">
+          <h1 className="font-bold   text-gray-800 md:text-5xl text-2xl leading-8 md:leading-15 md:max-w-md ">
             Remove the{" "}
             <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
               background
@@ -37,7 +37,7 @@ function Home() {
 
           <Button
             onClick={handleFile}
-            className="md:px-9 mx-auto md:mx-0 md:py-3 mt-3"
+            className="md:px-9 md:py-3 mt-3"
             text="Upload Image"
             icon={<Upload />}
             variant="secondary"
@@ -82,7 +82,7 @@ function Home() {
         </div>
 
         {/* Upload Button */}
-        <h1 className="text-gray-800 font-semibold md:text-4xl text-2xl text-center  ">
+        <h1 className="text-gray-800 font-bold md:text-4xl text-2xl text-center  ">
           See the magic. Try now
         </h1>
         <div className="flex justify-center">

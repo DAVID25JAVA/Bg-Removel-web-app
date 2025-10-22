@@ -5,7 +5,7 @@ import Image from "next/image";
 function Testimonial() {
   return (
     <div className="md:my-28 my-20">
-      <h1 className="text-gray-800 font-semibold md:text-4xl text-2xl text-center">
+      <h1 className="text-gray-800 font-bold md:text-4xl text-2xl text-center">
         Customer Testimonials
       </h1>
 
@@ -29,7 +29,7 @@ function Testimonial() {
                   />
                 </div>
                 <div className="flex flex-col leading-2">
-                  <p className="text-black font-semibold text-base">
+                  <p className="text-black font-bold text-base">
                     {data?.author}
                   </p>
                   <p className="text-gray-600 text-sm ">{data?.jobTitle}</p>

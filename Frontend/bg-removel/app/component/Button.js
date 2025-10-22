@@ -22,7 +22,7 @@ export default function Button({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`flex items-center text-sm cursor-pointer rounded-full justify-center gap-2 px-4 py-2 font-medium transition-all duration-200 
+      className={`flex items-center md:text-sm text-xs cursor-pointer rounded-full justify-center gap-2 md:px-4 md:py-2 p-2 md:p-0 font-medium transition-all duration-200 
       ${variants[variant]} 
       ${disabled ? "opacity-60 cursor-not-allowed" : ""}
       ${className}`}
