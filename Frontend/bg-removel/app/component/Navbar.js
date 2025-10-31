@@ -5,9 +5,14 @@ import { assets } from "@/public/assets/assets";
 import Button from "./Button";
 import { MoveRight } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useClerk, UserButton, useUser } from "@clerk/nextjs";
 
 function Navbar() {
   const router = useRouter();
+
+  const { openSignIn } = useClerk();
+  const { isSignedIn, user } = useUser();
+
   return (
     <div className="max-w-6xl mx-auto py-5 px-5">
       {/* logo */}
@@ -15,10 +20,10 @@ function Navbar() {
         <div>
           <Image
             onClick={() => {
-              router.push("/")
+              router.push("/");
               scrollTo(0, 0);
             }}
-            className="cursor-pointer w-40 md:w-0 "
+            className="cursor-pointer w-40 md:w-48"
             alt="logo"
             src={assets?.logo}
             width={180}
@@ -27,9 +32,21 @@ function Navbar() {
         </div>
 
         {/* Button */}
-        <div>
-          <Button text="Get Started" className="" variant="primary" icon={<MoveRight />} />
-        </div>
+        {isSignedIn ? (
+          <div>
+            <UserButton />
+          </div>
+        ) : (
+          <div>
+            <Button
+              onClick={() => openSignIn()}
+              text="Get Started"
+              className=""
+              variant="primary"
+              icon={<MoveRight />}
+            />
+          </div>
+        )}
       </div>
     </div>
   );

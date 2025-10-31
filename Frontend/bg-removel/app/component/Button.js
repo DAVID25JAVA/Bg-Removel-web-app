@@ -11,6 +11,7 @@ export default function Button({
   className = "",
 }) {
   const variants = {
+    normal:"bg-gray-100 hover:scale-105 transition-all duration-500 text-gray-600 ",
     primary:
       "bg-gray-800 hover:bg-gray-600 text-white hover:scale-105 transition-all duration-500",
     secondary:
